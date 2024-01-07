@@ -1,8 +1,24 @@
 ---
+import '../styles/global.css'
+
 const date = new Date();
 const fullYear = date.getFullYear();
 const name = "Rhys Johns";
 ---
+
+<style>
+    footer {
+        width: 70vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin: auto;
+    }
+    p {
+        font-family: 'Montserrat', sans-serif;
+    }
+</style>
 
 <footer>
     <p>&copy; { fullYear } { name }. All Rights Reserved.</p>

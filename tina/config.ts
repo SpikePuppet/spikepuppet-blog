@@ -31,7 +31,7 @@ export default defineConfig({
       {
         name: "post",
         label: "Posts",
-        path: "src/pages/posts",
+        path: "src/posts/",
         fields: [
           {
             type: "string",
@@ -39,6 +39,30 @@ export default defineConfig({
             label: "Title",
             isTitle: true,
             required: true,
+          },
+          {
+            type: "datetime",
+            name: "publishDate",
+            label: "Published",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "author",
+            label: "Author",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "tags",
+            label: "Tags",
+            list: true,
           },
           {
             type: "rich-text",
