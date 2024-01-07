@@ -60,6 +60,12 @@ export default defineConfig({
           },
           {
             type: "string",
+            name: "slug",
+            label: "Slug",
+            required: true,
+          },
+          {
+            type: "string",
             name: "tags",
             label: "Tags",
             list: true,
