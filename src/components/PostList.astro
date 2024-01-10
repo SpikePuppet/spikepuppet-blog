@@ -1,0 +1,30 @@
+---
+import PostPreview from './PostPreview.astro'
+
+const {posts} = Astro.props;
+
+const sortedPosts = posts.sort((a: any, b: any) => {
+    return new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf();
+});
+---
+
+<style>
+    ul {
+        list-style: none;
+    }
+</style>
+
+<content>
+    <ul>
+        {sortedPosts.map((post: any) => 
+            <PostPreview 
+                title={post.frontmatter.title} 
+                publishDate={post.frontmatter.publishDate}
+                author={post.frontmatter.author}
+                description={post.frontmatter.description}
+                slug={post.frontmatter.slug}
+            />)}
+    </ul>
+</content>
+
+

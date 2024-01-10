@@ -1,0 +1,10 @@
+---
+const {title, publishDate, author, description, slug} = Astro.props;
+---
+
+<li>
+    <a href={`/posts/${slug}/`}>{title}</a>
+    <p>{author}</p>
+    <time datetime={publishDate}>{publishDate}</time>
+    <p>{description}</p>
+</li>
