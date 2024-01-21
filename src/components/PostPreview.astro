@@ -15,11 +15,16 @@ const {title, publishDate, author, description, slug} = Astro.props;
 
     li {
         width: 100%;
-        padding: 16px
+        padding: 16px;
+        border: black 1px solid;
+        border-radius: 16px;
+        margin-top: 16px;
     }
     
     li:hover {
-        border: black 1px solid;
+        transform: translate(-0.3em, -0.3em);
+        box-shadow: 0.3em 0.3em 0 0 black;
+        transition-duration: 0.2s;
     }
 </style>
 
