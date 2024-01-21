@@ -3,7 +3,7 @@ import type { GetStaticPaths, MarkdownInstance } from "astro";
 
 
 export const getStaticPaths = (async () => {
-    const posts: MarkdownInstance<Record<string, any>>[] = await Astro.glob("../posts/*.md");
+    const posts: MarkdownInstance<Record<string, any>>[] = await Astro.glob("../../posts/*.md");
     return posts.map((post: MarkdownInstance<Record<string, any>>) => ({
         params: {
             slug: post.frontmatter.slug,
