@@ -2,9 +2,29 @@
 const {title, publishDate, author, description, slug} = Astro.props;
 ---
 
+<style>
+    a {
+        font-size: 1.5rem;
+        font-family: 'Fira Sans', sans-serif;
+    }
+
+    p {
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    li {
+        width: 100%;
+        padding: 16px
+    }
+    
+    li:hover {
+        border: black 1px solid;
+    }
+</style>
+
 <li>
     <a href={`/posts/${slug}/`}>{title}</a>
-    <p>{author}</p>
-    <time datetime={publishDate}>{publishDate}</time>
+    <p>{author}, <time datetime={publishDate}>{publishDate}</time></p>
     <p>{description}</p>
 </li>

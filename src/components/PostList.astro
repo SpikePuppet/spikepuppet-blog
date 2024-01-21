@@ -9,9 +9,20 @@ const sortedPosts = posts.sort((a: any, b: any) => {
 ---
 
 <style>
+    content {
+        display: flex;
+        margin-top: 16px;
+    }
+
     ul {
         list-style: none;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        width: 70vw;
+        padding: 0; # This was causing some odd alignment 
     }
+
 </style>
 
 <content>
@@ -19,7 +30,11 @@ const sortedPosts = posts.sort((a: any, b: any) => {
         {sortedPosts.map((post: any) => 
             <PostPreview 
                 title={post.frontmatter.title} 
-                publishDate={post.frontmatter.publishDate}
+                publishDate={new Date(post.frontmatter.publishDate).toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric"
+                })})
                 author={post.frontmatter.author}
                 description={post.frontmatter.description}
                 slug={post.frontmatter.slug}
