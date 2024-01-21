@@ -26,20 +26,22 @@ const sortedPosts = posts.sort((a: any, b: any) => {
 </style>
 
 <content>
-    <ul>
-        {sortedPosts.map((post: any) => 
-            <PostPreview 
-                title={post.frontmatter.title} 
-                publishDate={new Date(post.frontmatter.publishDate).toLocaleDateString("en-US", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric"
-                })})
-                author={post.frontmatter.author}
-                description={post.frontmatter.description}
-                slug={post.frontmatter.slug}
-            />)}
-    </ul>
+    {sortedPosts.length === 0 ? <p>No posts yet!</p> : 
+        <ul>
+            {sortedPosts.map((post: any) => 
+                <PostPreview 
+                    title={post.frontmatter.title} 
+                    publishDate={new Date(post.frontmatter.publishDate).toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric"
+                    })})
+                    author={post.frontmatter.author}
+                    description={post.frontmatter.description}
+                    slug={post.frontmatter.slug}
+                />)}
+        </ul>
+    }
 </content>
 
 
