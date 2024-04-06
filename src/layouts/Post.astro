@@ -1,9 +1,8 @@
 ---
 import Header from "../components/Header.astro"
-import Navigattion from "../components/Navigation.astro"
+import Navigation from "../components/Navigation.astro"
 import Footer from "../components/Footer.astro"
-
-
+import BlogPost from '../components/BlogPost.astro'
 ---
 
 <html>
@@ -16,11 +15,11 @@ import Footer from "../components/Footer.astro"
     </head>
     <body>
         <Header />
-		<Navigattion />
+		<Navigation />
         <main>
-            <article>
+            <BlogPost>
                 <slot/>
-            </article>
+            </BlogPost>
         </main>
 		<Footer />
     </body>
