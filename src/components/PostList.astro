@@ -16,10 +16,22 @@ const sortedPosts = posts.sort((a: any, b: any) => {
 
     ul {
         list-style: none;
-        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        gap: 16px;
+    }
+
+
+    content {
+        width: 60vw; /* Really should probably should pull this up one level */
+        display: flex;
+        /* border: 1px solid black; */
+        justify-content: center;
+        align-content: center;
         margin: auto;
-        width: 70vw;
-        padding: 0; # This was causing some odd alignment 
+        margin-top: 16px;
     }
 
 </style>
