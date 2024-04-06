@@ -1,4 +1,4 @@
-# Astro Starter Kit: Minimal
+# SpikePuppet Blog
 
 ```sh
 npm create astro@latest -- --template minimal
