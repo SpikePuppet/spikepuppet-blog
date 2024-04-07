@@ -5,7 +5,7 @@ export const prerender = true;
 export const getStaticPaths = (async () => {
     let posts: MarkdownInstance<Record<string, any>>[];
     try {
-        posts = await Astro.glob("../../posts/*.md");
+        posts = (await Astro.glob("../../posts/*.md")).filter((post) => post.frontmatter.title !== "About me");
     } catch {
         posts = [];
     }

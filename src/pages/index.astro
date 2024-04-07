@@ -8,7 +8,7 @@ import type { MarkdownInstance } from "astro"
 
 let posts: MarkdownInstance<Record<string, any>>[];
 try {
-	posts = (await Astro.glob("../posts/*.md"))	
+	posts = (await Astro.glob("../posts/*.md")).filter((post) => post.frontmatter.title !== "About me");
 } catch {
 	posts = []
 }
@@ -23,7 +23,7 @@ const blogPosts = posts
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" /> 
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Rhys' Train of Thought</title>
+		<title>Rhys' Ramblings</title>
 	</head>
 	<body>
 		<Header />
