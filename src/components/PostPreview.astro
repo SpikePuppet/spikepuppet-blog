@@ -49,7 +49,7 @@ const {title, publishDate, author, description, slug} = Astro.props;
 
 <li>
     <a href={`/posts/${slug}/`}>{title}</a>
-    <p>{author}</p>
+    <p>By: {author}</p>
     <time>{new Date(publishDate).toLocaleString()}</time>
     <p>{description}</p>
 </li>
