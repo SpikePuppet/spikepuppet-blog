@@ -34,3 +34,7 @@ p {
     font-size: 1.2rem;
     color: #1D1128;
 }
+
+time {
+    font-family: 'Montserrat', sans-serif;
+}
