@@ -1,7 +1,7 @@
 ---
 import type { GetStaticPaths, MarkdownInstance } from "astro";
 
-
+export const prerender = true;
 export const getStaticPaths = (async () => {
     let posts: MarkdownInstance<Record<string, any>>[];
     try {
