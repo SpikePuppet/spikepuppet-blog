@@ -83,6 +83,12 @@ export default defineConfig({
             label: "Body",
             isBody: true,
           },
+          {
+            type: "boolean",
+            name: "draft",
+            label: "Draft",
+            required: true,
+          },
         ],
       },
     ],
