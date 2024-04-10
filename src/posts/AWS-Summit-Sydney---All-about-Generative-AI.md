@@ -13,6 +13,8 @@ With another AWS Summit complete, I thought I'd give a little recap and my thoug
 
 This is my second year attending. Last year, the focus was on how great AWS is, and all of the offerings they provided to customers. Now they've gone all in on Generative AI.This isn't a bad thing however, it's actually been really cool too see. It's great to see that AWS has gone all in, and to hear about what's available, even if it feels like I'm being marketed too.
 
+![](/IMG_9010.png)
+
 (...let's be real, I am, that's what these events are for)
 
 The whole day has been a host of AI related talks. Everything from tuning your own models to handling bias in your models (I really liked this one! Even though it was mostly to sell sagemaker), you could find a talk on it. This meant I needed to really pick and choose what I was going to go and see. Allow me to give you the (very brief) highlights:
