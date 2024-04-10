@@ -11,7 +11,7 @@ slug: aws-summit-recap
 
 With another AWS Summit complete, I thought I'd give a little recap and my thoughts on what I've seen today.
 
-This is my second year attending. Last year, the focus was on how great AWS is, and all of the offerings they provided to customers. Now they've gone all in on Generative AI.![photo of the keynote talk which has a slide saying generative ai](/IMG_9010.png "This was the keynote - they spent the whole time on AI. ")This isn't a bad thing however, it's actually been really cool too see. It's great to see that AWS has gone all in, and to hear about what's available, even if it feels like I'm being marketed too.
+This is my second year attending. Last year, the focus was on how great AWS is, and all of the offerings they provided to customers. Now they've gone all in on Generative AI.This isn't a bad thing however, it's actually been really cool too see. It's great to see that AWS has gone all in, and to hear about what's available, even if it feels like I'm being marketed too.
 
 (...let's be real, I am, that's what these events are for)
 
@@ -23,7 +23,7 @@ Honestly, this was a little underwhelming. It basically was taking logs from clo
 
 ## How slack build resilient architecture to support real time message
 
-This was very cool. The talk mentioned cell architecture, which was basically deploying your app in different AZ's and not having them depend on each other to limit damage when something goes wrong. I'm overly simplifying this, but it was really good. Also hearing about how Slack managed their egress stack was awesome. 
+This was very cool. The talk mentioned cell architecture, which was basically deploying your app in different AZ's and not having them depend on each other to limit damage when something goes wrong. I'm overly simplifying this, but it was really good. Also hearing about how Slack managed their egress stack was awesome.
 
 ## Uncovering National Treasure: How the national film and sound archive leveraged GenAI and MongoDB to enhance content discovery
 
