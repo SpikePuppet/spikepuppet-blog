@@ -5,10 +5,11 @@
   "scripts": {
     "dev": "tinacms dev -c \"astro dev\"",
     "start": "astro dev",
-    "build": "tinacms build && astro check && astro build",
+    "build": "prebuild && tinacms build && astro check && astro build",
     "astrobuild": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prebuild": "node scripts/replaceAssetPaths.js"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.10",
