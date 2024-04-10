@@ -3,11 +3,12 @@ layout: ../layouts/Post.astro
 title: AWS Summit Sydney - All about Generative AI
 publishDate: 2024-04-09T14:00:00.000Z
 author: Rhys Johns
-description: 'A recap of AWS Summit Sydney, and all the Generative AI info it had to offer'
+description: "A recap of AWS Summit Sydney, and all the Generative AI info it had to offer"
 slug: aws-summit-recap
+draft: true
 ---
 
-*Disclaimer: The views outlined in this blog post are mine and mine alone, and don't reflect that of my employer.*
+_Disclaimer: The views outlined in this blog post are mine and mine alone, and don't reflect that of my employer._
 
 With another AWS Summit complete, I thought I'd give a little recap and my thoughts on what I've seen today.
 
@@ -39,6 +40,6 @@ This was very cool. The speaker used his experience of being in a bank as a kid 
 
 This was pretty cool - the architect went into great dept about setting up RAG and how you should be using models in AWS. Basically, you should try and leverage an off the shelf model, if that doesn't work start using RAG (which you setup with AWS services), then use agents, then finally train your own model. This was mostly what I could probably find in the docs, but it was very cool too see on stage and broken down regardless.
 
-***
+---
 
 To wrap up, the day was a good one (if not heavily geared towards marketing), all focused on generative AI. I can't wait to see what it's like next year.
