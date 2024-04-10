@@ -8,7 +8,7 @@ import type { MarkdownInstance } from "astro"
 
 let posts: MarkdownInstance<Record<string, any>>[];
 try {
-	posts = (await Astro.glob("../posts/*.md")).filter((post) => post.frontmatter.title !== "About Me");
+	posts = (await Astro.glob("../posts/*.md")).filter((post) => post.frontmatter.title !== "About Me" && !post.frontmatter.draft);
 } catch {
 	posts = []
 }
