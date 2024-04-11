@@ -3,7 +3,7 @@ import { exec } from "child_process";
 
 // all .md files in this directory will be processed
 // specify from the root of your project
-const postsDirectory = "/src/posts/";
+const postsDirectory = "/src/content/posts/";
 
 // Find and replace strings
 const find = "/src/assets/";
