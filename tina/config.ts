@@ -34,13 +34,6 @@ export default defineConfig({
         path: "src/content/posts/",
         fields: [
           {
-            name: "layout",
-            label: "Layout",
-            type: "string",
-            required: true,
-            searchable: false,
-          },
-          {
             type: "string",
             name: "title",
             label: "Title",
