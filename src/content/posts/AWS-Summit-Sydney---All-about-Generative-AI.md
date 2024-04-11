@@ -1,5 +1,4 @@
 ---
-layout: test
 title: AWS Summit Sydney - All about Generative AI
 publishDate: 2024-04-09T14:00:00.000Z
 author: Rhys Johns
