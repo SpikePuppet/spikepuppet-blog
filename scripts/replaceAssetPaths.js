@@ -7,7 +7,7 @@ const postsDirectory = "/src/content/posts/";
 
 // Find and replace strings
 const find = "/src/assets/";
-let replace = "../../../../../assets/"; // update this path based on where files are located
+let replace = "../../assets/"; // update this path based on where files are located
 
 replace = replace.replaceAll(".", "\\.");
 // Special characters (https://en.wikipedia.org/wiki/Regular_expression#POSIX_basic_and_extended) need to be escaped
