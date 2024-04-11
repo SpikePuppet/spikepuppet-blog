@@ -38,3 +38,8 @@ p {
 time {
     font-family: 'Montserrat', sans-serif;
 }
+
+img {
+    width: auto;
+    height: auto;
+}
