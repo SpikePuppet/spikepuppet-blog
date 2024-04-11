@@ -1,6 +1,6 @@
 ---
 title: AWS Summit Sydney - All about Generative AI
-publishDate: 2024-04-09T14:00:00.000Z
+publishDate: 2024-04-10T14:00:00.000Z
 author: Rhys Johns
 description: 'A recap of AWS Summit Sydney, and all the Generative AI info it had to offer'
 slug: aws-summit-recap
@@ -43,6 +43,6 @@ This was pretty cool - the architect went into great dept about setting up RAG (
 
 ***
 
-Overall, the day was a good one! I got to see friends I hadn't seen in some time, and listen to some great marketing talks about the current hotness. 
+Overall, the day was a good one! I got to see friends I hadn't seen in some time, and listen to some great marketing talks about the current hotness.
 
 Oh! - Shout out to the person who was running the CodeWhisperer booth. You gave a great demo and it was great chatting with you!
