@@ -1,5 +1,4 @@
 ---
-layout: ../layouts/Post.astro
 title: About Me
 publishDate: 2024-04-06T13:00:00.000Z
 author: Rhys Johns
