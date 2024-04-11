@@ -3,18 +3,6 @@ import Header from "../components/Header.astro"
 import Navigattion from "../components/Navigation.astro"
 import Footer from "../components/Footer.astro"
 import PostList from "../components/PostList.astro"
-
-import type { MarkdownInstance } from "astro"
-
-let posts: MarkdownInstance<Record<string, any>>[];
-try {
-	posts = (await Astro.glob("../posts/*.md")).filter((post) => post.frontmatter.title !== "About Me" && !post.frontmatter.draft);
-} catch {
-	posts = []
-}
-
-const blogPosts = posts
-	.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf())
 ---
 
 <html lang="en">
@@ -28,7 +16,7 @@ const blogPosts = posts
 	<body>
 		<Header />
 		<Navigattion />
-		<PostList posts={blogPosts} />
+		<PostList />
 		<Footer />
 	</body>
 </html>
