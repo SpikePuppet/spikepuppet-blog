@@ -3,6 +3,7 @@ import '../styles/global.css'
 
 const githubLink = "https://github.com/SpikePuppet";
 const linkedInLink = "https://www.linkedin.com/in/rhysjohns/";
+const rssLink = `${Astro.site}rss.xml`
 ---
 <!-- This should be the title and navigation bar -->
 <style> 
@@ -46,7 +47,8 @@ const linkedInLink = "https://www.linkedin.com/in/rhysjohns/";
     </a>
     <div class="social-media">
         <a href={githubLink}><i class="fa-brands fa-github fa-2x"></i></a>
-        <a href={linkedInLink}><i class="fa-brands fa-linkedin fa-2x"></i></a>       
+        <a href={linkedInLink}><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        <a href={rssLink}><i class="fa-solid fa-square-rss fa-2x"></i></a>       
     </div>
 </header>
 
