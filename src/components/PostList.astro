@@ -2,7 +2,6 @@
 import PostPreview from './PostPreview.astro'
 import { getCollection } from 'astro:content';
 
-
 const posts = await getCollection("posts");
 const sortedPosts = posts
     .map(post => {
@@ -16,42 +15,39 @@ const sortedPosts = posts
     });
 ---
 <style>
-
-  content {
-    /* MODIFICATION: Set width to 60vw and center */
+  /* Switched to a semantic <main> tag */
+  main {
     width: 60vw;
     margin: 0 auto; 
-
     margin-top: 2rem;
   }
 
   ul {
-    align-items: center;
     list-style: none;
     display: flex;
     flex-direction: column;
-    width: 60vw;
     padding: 0;
-
-    /* MODIFICATION: Remove the old gap to use borders instead */
+    
+    /* MODIFICATION: Let the list fill the main container */
+    width: 100%; 
     gap: 0;
   }
-
-  
+ 
   ul > :global(li) {
-    padding-bottom: 2.5rem; /* Space below the content */
-    margin-bottom: 2.5rem; /* Space below the border */
+    /* MODIFICATION: Ensure list items take up the full width */
+    width: 100%; 
+    padding-bottom: 2.5rem; 
+    margin-bottom: 2.5rem; 
     border-bottom: 1px solid var(--border-subtle, #475569);
   }
 
-  /* Ensure the last post doesn't have a border or extra space */
   ul > :global(li:last-child) {
     border-bottom: none;
     margin-bottom: 0;
   }
 </style>
 
-<content>
+<main>
     {sortedPosts.length === 0 ? <p>No posts yet!</p> : 
         <ul>
             {sortedPosts.map((post: any) => 
@@ -61,13 +57,11 @@ const sortedPosts = posts
                         year: "numeric",
                         month: "long",
                         day: "numeric"
-                    })})
+                    })}
                     author={post.author}
                     description={post.description}
                     slug={post.slug}
                 />)}
         </ul>
     }
-</content>
-
-
+</main>
