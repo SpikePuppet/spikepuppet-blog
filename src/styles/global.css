@@ -13,19 +13,19 @@ body {
 }
 
 h1 {
-    font-family: 'IBM Plex Mono', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 1.8rem;
     color: #F1F5F9;
 }
 
 h2 {
-    font-family: 'IBM Plex Mono', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 1.6rem;
     color: #F1F5F9;
 }
 
 h3 {
-    font-family: 'IBM Plex Mono', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 1.4em;
     color: #F1F5F9;
 }
