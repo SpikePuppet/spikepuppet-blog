@@ -12,9 +12,8 @@
     align-items: center;
     
     /* Center the header and give it a max-width */
-    max-width: 720px;
+    width: 60vw;
     margin: 0 auto;
-    padding: 1.5rem 1rem;
 
     /* The 'Minimalist Underline' */
     border-bottom: 1px solid var(--border-subtle, #475569);
@@ -63,12 +62,9 @@
       <a href="/about/">About</a>
     </nav>
     <div class="social-links">
-      <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        GH
-      </a>
-      <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        LI
-      </a>
+      <a href={githubLink}><i class="fa-brands fa-github fa-2x"></i></a>
+      <a href={linkedInLink}><i class="fa-brands fa-linkedin fa-2x"></i></a>
+      <a href={rssLink}><i class="fa-solid fa-square-rss fa-2x"></i></a>
     </div>
   </div>
 </header>
