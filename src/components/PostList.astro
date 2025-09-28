@@ -15,33 +15,36 @@ const sortedPosts = posts
         return post.title !== "About Me" && !post.draft;
     });
 ---
-
 <style>
-    content {
-        display: flex;
-        margin-top: 16px;
-    }
 
-    ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        gap: 16px;
-    }
+  content {
+    /* MODIFICATION: Control the space below the header here */
+    margin-top: 2rem; 
+  }
 
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
 
-    content {
-        width: 60vw; /* Really should probably should pull this up one level */
-        display: flex;
-        /* border: 1px solid black; */
-        justify-content: center;
-        align-content: center;
-        margin: auto;
-        margin-top: 16px;
-    }
+    /* MODIFICATION: Remove the old gap to use borders instead */
+    gap: 0;
+  }
 
+  
+  ul > :global(li) {
+    padding-bottom: 2.5rem; /* Space below the content */
+    margin-bottom: 2.5rem; /* Space below the border */
+    border-bottom: 1px solid var(--border-subtle, #475569);
+  }
+
+  /* Ensure the last post doesn't have a border or extra space */
+  ul > :global(li:last-child) {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
 </style>
 
 <content>
