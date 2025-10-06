@@ -1,5 +1,5 @@
 ---
-title: 'A rubber ducks, even on acid, wont take your job'
+title: 'A rubber duck, even on acid, wont take your job'
 publishDate: 2025-10-06T07:00:00.000Z
 author: Rhys Johns
 description: >-
