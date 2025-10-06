@@ -18,7 +18,7 @@ const sortedPosts = posts
   /* Switched to a semantic <main> tag */
   main {
     width: 60vw;
-    margin: 0 auto; 
+    margin: 0 auto;
     margin-top: 2rem;
   }
 
@@ -27,23 +27,37 @@ const sortedPosts = posts
     display: flex;
     flex-direction: column;
     padding: 0;
-    
+
     /* MODIFICATION: Let the list fill the main container */
-    width: 100%; 
+    width: 100%;
     gap: 0;
   }
- 
+
   ul > :global(li) {
     /* MODIFICATION: Ensure list items take up the full width */
-    width: 100%; 
-    padding-bottom: 2.5rem; 
-    margin-bottom: 2.5rem; 
+    width: 100%;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
     border-bottom: 1px solid var(--border-subtle, #475569);
   }
 
   ul > :global(li:last-child) {
     border-bottom: none;
     margin-bottom: 0;
+  }
+
+  /* Mobile responsive styles */
+  @media (max-width: 768px) {
+    main {
+      width: calc(100vw - 2rem); /* Full width with 1rem margin on each side */
+    }
+  }
+
+  /* Tablet-specific adjustments */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    main {
+      width: calc(100vw - 4rem); /* Full width with 2rem margin on each side */
+    }
   }
 </style>
 

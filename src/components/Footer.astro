@@ -19,6 +19,20 @@ const name = "Rhys Johns";
         font-family: 'IBM Plex Sans', sans-serif;
         font-size: 0.9em;
     }
+
+    /* Mobile responsive styles */
+    @media (max-width: 768px) {
+        footer {
+            width: calc(100vw - 2rem); /* Full width with 1rem margin on each side */
+        }
+    }
+
+    /* Tablet-specific adjustments */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        footer {
+            width: calc(100vw - 4rem); /* Full width with 2rem margin on each side */
+        }
+    }
 </style>
 
 <footer>

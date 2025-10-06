@@ -10,6 +10,20 @@ import '../styles/global.css'
         margin: 0 auto;
         width: 60vw;
     }
+
+    /* Mobile responsive styles */
+    @media (max-width: 768px) {
+        article {
+            width: calc(100vw - 2rem); /* Full width with 1rem margin on each side */
+        }
+    }
+
+    /* Tablet-specific adjustments */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        article {
+            width: calc(100vw - 4rem); /* Full width with 2rem margin on each side */
+        }
+    }
 </style>
 
 <article>

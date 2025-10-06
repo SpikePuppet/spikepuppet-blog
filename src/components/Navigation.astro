@@ -47,7 +47,7 @@ const rssLink = `${Astro.site}rss.xml`;
     font-weight: 500;
     transition: color 0.2s ease-in-out;
   }
-  
+
   .social-links {
     display: flex;
     align-items: center;
@@ -57,6 +57,66 @@ const rssLink = `${Astro.site}rss.xml`;
   /* Style all links in the header on hover */
   .nav-group a:hover {
     color: var(--accent, #FBBF24);
+  }
+
+  .nav-divider {
+    display: none; /* Hidden on desktop */
+  }
+
+  /* Mobile and tablet responsive styles */
+  @media (max-width: 768px) {
+    header {
+      width: calc(100vw - 2rem); /* Full width with 1rem margin on each side */
+      flex-direction: column;
+      align-items: center;
+      padding: 1.5rem 0;
+      gap: 0;
+      border-bottom: none; /* Remove the header border on mobile */
+    }
+
+    .site-title {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+
+    .site-title a {
+      font-size: 1.5rem; /* Increase size on mobile */
+    }
+
+    .nav-group {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .nav-links {
+      flex-direction: row;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .social-links {
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .nav-divider {
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: var(--border-subtle, #475569);
+      margin: 0;
+    }
+  }
+
+  /* Tablet-specific adjustments */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    header {
+      width: calc(100vw - 4rem); /* Full width with 2rem margin on each side */
+    }
   }
 </style>
 
@@ -76,6 +136,8 @@ const rssLink = `${Astro.site}rss.xml`;
       <a href={rssLink}><i class="fa-solid fa-square-rss fa-2x"></i></a>
     </div>
   </div>
+
+  <div class="nav-divider"></div>
 </header>
 
 <script src="https://kit.fontawesome.com/b9cb6112ac.js" crossorigin="anonymous"></script>
