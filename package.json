@@ -20,7 +20,7 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@tinacms/cli": "^1.5.39",
+    "@tinacms/cli": "1.5.39",
     "@types/node": "^20.10.6"
   }
 }
