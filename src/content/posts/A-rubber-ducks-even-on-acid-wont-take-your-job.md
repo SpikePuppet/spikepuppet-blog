@@ -9,6 +9,8 @@ slug: a-rubber-duck-on-acid-wont-take-jobs
 draft: false
 ---
 
+# A rubber duck, even on acid, wont take your job
+
 I still remember pretty clearly. It was 2011, and I was sitting in my Certificate IV in Programming course or it might have been the start of a diploma and we we're doing our "Project Management" unit. It wasn't the worst class, and we had a great teacher, who's name I wish I still remembered. But one day he turned to us, fresh blood in the world of tech and told us point blank "You won't have jobs in a few years".
 
 I remember being baffled? What did he mean? Why the hell were we doing this course. He went on to elaborate that all the programming jobs would be outsourced to other countries, and we wouldn't need to write code. I pushed it to the back of my mind, determined to write some code and find the challenge I was looking for, which would become the recurring theme which would guide the bulk of my career.
