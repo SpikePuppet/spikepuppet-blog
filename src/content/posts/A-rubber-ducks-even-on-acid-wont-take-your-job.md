@@ -15,7 +15,7 @@ I still remember pretty clearly. It was 2011, and I was sitting in my Certificat
 
 I remember being baffled? What did he mean? Why the hell were we doing this course. He went on to elaborate that all the programming jobs would be outsourced to other countries, and we wouldn't need to write code. I pushed it to the back of my mind, determined to write some code and find the challenge I was looking for, which would become the recurring theme which would guide the bulk of my career.
 
-Jump to a few years later, the startup revolution back by zero interest rates was in full swing. And wouldn't you know it, he was wrong. We were very much needed. This pattern would continue throughout my career - there was no code, then outsourcing again, and each time we were told "You won't have a job", and each time we were needed even more.
+Jump to a few years later, the startup revolution backed by zero interest rates was in full swing. And wouldn't you know it, he was wrong. We were very much needed. This pattern would continue throughout my career - there was no code, then outsourcing again, and each time we were told "You won't have a job", and each time we were needed even more.
 
 As software engineers, this is something we hear every few years, and this AI revolution is no different. AI - by this I mean our current iteration using LLM's - is such a powerful tool. I often like to refer to it as a Rubber Duck on Acid. Often times when I'm stuck I'll whack what I'm up against into the LLM, and watch what comes out. If it's gibberish, usually that jogs something to help me get out of my funk. If it's good, it launches me into a flow state where all kinds of work gets done.
 
