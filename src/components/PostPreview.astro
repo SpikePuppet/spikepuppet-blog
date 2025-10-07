@@ -13,7 +13,7 @@ const {title, publishDate, author, description, slug} = Astro.props;
     */
     a {
         position: relative;
-        color: #FBBF24;
+        color: var(--accent);
         text-decoration: none;
         font-family: 'IBM Plex Mono', monospace;
         font-size: 1.5rem;
@@ -21,7 +21,7 @@ const {title, publishDate, author, description, slug} = Astro.props;
     }
 
     a:hover {
-        color: #FBBF24
+        color: var(--accent);
     }
 
     a::before {
@@ -32,7 +32,7 @@ const {title, publishDate, author, description, slug} = Astro.props;
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #000;
+        background-color: var(--code-bg);
         transform: scaleX(0);
         transition: transform 0.3s ease;
         }

@@ -15,7 +15,7 @@ With another AWS Summit complete (this is my seconds), I thought I'd write up a 
 
 Last year, the focus was on how great AWS is, and all of the offerings they provided to customers. I still remember quite clearly the mentions of the wild and farfetched places that AWS could operate, with mentions of Generative AI. Now they've gone all in on Generative AI. The entire keynote was about it (as seen in the image below). This isn't a bad thing though, it's been amazing too see how it's expanded in just a year and how much AWS has invested in it. They've gone all in, and it's a great chance to hear about what's available, even if it feels like I'm being *heavily* marketed too.
 
-![](/src/assets/IMG_9010.png)
+![](../../assets/IMG_9010.png)
 
 (...let's be real, I am, that's what these events are for, and it usually works)
 

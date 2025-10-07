@@ -18,6 +18,19 @@ let { title, draft } = Astro.props
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+        <script is:inline>
+            // Prevent flash of wrong theme
+            (function() {
+                const getSystemPreference = () => {
+                    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+                };
+                const stored = localStorage.getItem('theme');
+                const theme = stored || getSystemPreference();
+                if (theme === 'light') {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                }
+            })();
+        </script>
     </head>
     <body>
 		<Navigation />
