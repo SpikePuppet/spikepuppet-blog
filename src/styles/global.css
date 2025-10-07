@@ -45,3 +45,10 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* Force horizontal scroll on mobile devices */
+@media (max-width: 768px) {
+    body {
+        min-width: 1200px;
+    }
+}
