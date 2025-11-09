@@ -66,10 +66,8 @@ You refer to changes by their change ID. Using the image below as an example
 The ID mxzyllkz is the change ID, which never changes and you can use as an identifier. c25b6cb5 is the commit ID, which will change as you make changes. You can refer to these purely by what’s highlighted (so m and c) in this case. This will be handy later.
 
 <aside>
-💡
-
-One thing to note - when you run a command, that's when `jj` takes a snapshot of your current working directory. It's a neat little trick that means you don't need to worry about running background tasks or anything like that.
-
+<span>💡</span>
+<p>One thing to note - when you run a command, that's when `jj` takes a snapshot of your current working directory. It's a neat little trick that means you don't need to worry about running background tasks or anything like that.</p>
 </aside>
 
 To see your current working changes, run `jj st`. This works a bit like git status for `jj`.
