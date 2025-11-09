@@ -102,10 +102,15 @@ aside {
 
 aside > *:first-child {
     flex-shrink: 0;
+    line-height: 1.6;
 }
 
 aside > *:last-child {
     flex: 1;
+}
+
+aside p {
+    margin: 0;
 }
 
 code {
