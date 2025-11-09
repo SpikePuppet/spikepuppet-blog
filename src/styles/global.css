@@ -18,7 +18,8 @@
     --text-body: #334155;
     --accent: #D97706;
     --border-subtle: #CBD5E1;
-    --code-bg: #F1F5F9;
+    --code-bg: #2D3748;
+    --code-text: #E2E8F0;
 }
 
 a {
@@ -117,7 +118,7 @@ code {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.9em;
     background-color: var(--code-bg);
-    color: var(--text-body);
+    color: var(--code-text, var(--text-body));
     padding: 0.2em 0.4em;
     border-radius: 3px;
 }
@@ -125,7 +126,7 @@ code {
 pre {
     font-family: 'IBM Plex Mono', monospace;
     background-color: var(--code-bg);
-    color: var(--text-body);
+    color: var(--code-text, var(--text-body));
     padding: 1rem 1.5rem;
     margin: 1.5rem 0;
     border-radius: 6px;
